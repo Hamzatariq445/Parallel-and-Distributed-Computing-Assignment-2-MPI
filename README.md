@@ -24,3 +24,16 @@ parallel programming framework you choose.
 Performance evaluation: Evaluate the performance of the parallelized TSP solver in terms of
 runtime, speedup, and scalability. Compare the results with a sequential TSP solver on the same
 problem instances.
+
+2. Implement the following functions using point to point (ptop) functions ONLY.
+• MPI_Allgather
+• Similar to MPI_Gather, but the result is available to all processes
+• MPI_Allgatherv
+• Similar to MPI_Gatherv, but the result is available to all processes
+
+• MPI_Alltoall
+• Similar to MPI_Allgather, each process performs a scater followed by gather
+process
+• MPI_Alltoallv
+• Similar to MPI_Alltoall, but messages to different processes can have different
+length
